@@ -1,16 +1,151 @@
-# React + Vite
+# RepoReadme
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Generate professional README files directly from any public GitHub repository.
 
-Currently, two official plugins are available:
+RepoReadme analyzes a repository using the GitHub API and automatically creates a structured README with detected technologies, installation instructions, usage commands, and project information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+🔗 https://readme-generator-topaz.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Generate README files from public GitHub repositories.
+* Supports both GitHub URLs and `owner/repository` format.
+* Automatic repository information extraction.
+* Detects technologies from project dependencies.
+* Generates technology badges.
+* Live markdown preview.
+* Raw markdown output.
+* Copy README to clipboard.
+* Download README.md file.
+* Responsive design for desktop and mobile.
+
+---
+
+## Tech Stack
+
+* React
+* Vite
+* Tailwind CSS
+* JavaScript
+* GitHub REST API
+* React Markdown
+* Vercel
+
+---
+
+## How It Works
+
+1. Enter a public GitHub repository URL.
+2. The application fetches repository information using the GitHub API.
+3. Dependencies and project metadata are analyzed.
+4. A structured README file is generated automatically.
+5. Users can preview, copy, or download the generated README.
+
+---
+
+## Supported Input Formats
+
+```text
+https://github.com/facebook/react
+```
+
+or
+
+```text
+facebook/react
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/reporeadme.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd reporeadme
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── utils/
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## API Used
+
+This project uses the public GitHub REST API.
+
+No authentication or API keys are required for public repositories.
+
+---
+
+## Future Improvements
+
+* Support additional package managers.
+* More language ecosystem detection.
+* README templates.
+* Export to different formats.
+* Repository statistics.
+* Dark/light mode.
+
+---
+
+## Built For
+
+This project was developed as part of the Digital Heroes developer evaluation task.
+
+---
+
+## Author
+
+**Sara Gorule**
+
+Computer Engineering Student
+Frontend & Full Stack Developer
+
+GitHub: https://github.com/Saragorule13
+
+---
+
+## License
+
+This project is open source and available under the MIT License.
