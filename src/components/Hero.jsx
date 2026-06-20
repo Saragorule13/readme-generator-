@@ -71,13 +71,18 @@ export default function Hero({ onGenerate, loading }) {
       </div>
 
       <div className="relative mx-auto max-w-3xl px-4 text-center">
-        {/* V2 Badge */}
-        <div className="animate-fade-in mb-8 inline-flex items-center gap-2 rounded-full border border-gh-accent/30 bg-gh-accent/10 px-4 py-1.5 text-sm font-medium text-gh-accent">
+        {/* Built for Digital Heroes Link Button */}
+        <a
+          href="https://digitalheroesco.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="animate-fade-in mb-8 inline-flex items-center gap-2 rounded-full border border-gh-accent/30 bg-gh-accent/10 px-4 py-1.5 text-sm font-medium text-gh-accent transition-all duration-200 hover:bg-gh-accent/20 hover:border-gh-accent/50 hover:shadow-sm hover:shadow-gh-accent/10 active:scale-95 cursor-pointer"
+        >
           <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
-          V2.0 NOW LIVE
-        </div>
+          Built for Digital Heroes
+        </a>
 
         {/* Title */}
         <h1 className="animate-slide-up text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight leading-[1.15]">

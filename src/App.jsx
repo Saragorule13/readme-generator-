@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import TrustBar from "./components/TrustBar";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import Loading from "./components/Loading";
 import ErrorDisplay from "./components/ErrorDisplay";
 import RepoInput from "./components/RepoInput";
@@ -66,7 +67,7 @@ export default function App() {
       setState((prev) => ({ ...prev, status: "Generating README..." }));
 
       // Generate markdown
-      const markdown = generateReadme(repoInfo, techStack);
+      const markdown = generateReadme(repoInfo, techStack, contents);
 
       // Save to recent
       saveRecentRepo(repoInfo.full_name);
@@ -121,6 +122,7 @@ export default function App() {
             <Hero onGenerate={handleGenerate} loading={state.loading} />
             <Features />
             <TrustBar />
+            <Contact />
           </>
         )}
 
@@ -148,7 +150,7 @@ export default function App() {
         )}
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
